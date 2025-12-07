@@ -58,9 +58,7 @@ header p {
     padding: 0 1.25rem;
 }
 
-/* --------------------
-   Navigation
--------------------- */
+/* Navigation */
 
 .main-nav {
     position: sticky;
@@ -86,7 +84,7 @@ header p {
 }
 
 .main-nav a:hover {
-    background: rgba(148, 163, 184, 0.18);
+    background: linear-gradient(135deg, #6366f1, #ec4899);
     transform: translateY(-1px);
 }
 
@@ -95,9 +93,7 @@ header p {
     color: #f9fafb;
 }
 
-/* --------------------
-   Intro
--------------------- */
+/* Intro */
 
 .intro {
     text-align: center;
@@ -115,9 +111,7 @@ header p {
     font-size: 0.98rem;
 }
 
-/* --------------------
-   Cards des fansites
--------------------- */
+/* Cards des fansites */
 
 .fansites-grid {
     display: grid;
@@ -140,7 +134,7 @@ header p {
 .fansite-card:hover {
     transform: translateY(-8px) scale(1.01);
     box-shadow: 0 22px 40px rgba(15, 23, 42, 0.9);
-    border-color: rgba(129, 140, 248, 0.8);
+    border-color: linear-gradient(135deg, #6366f1, #ec4899);
 }
 
 /* Bandeau en haut de la carte */
@@ -232,9 +226,7 @@ header p {
     filter: brightness(1.05);
 }
 
-/* --------------------
-   Stats
--------------------- */
+/* Stats */
 
 .stats {
     display: flex;
@@ -249,7 +241,7 @@ header p {
     padding: 1rem 1.3rem;
     border-radius: 1rem;
     border: 1px solid rgba(148, 163, 184, 0.35);
-    background: radial-gradient(circle at top, rgba(148, 163, 184, 0.1), rgba(30, 41, 59, 0.95));
+    background: radial-gradient(circle at top, rgba(91, 48, 100, 0.1), rgba(51, 30, 59, 0.95));
     text-align: center;
 }
 
@@ -265,9 +257,7 @@ header p {
     letter-spacing: 0.12em;
 }
 
-/* --------------------
-   Footer
--------------------- */
+/* Footer */
 
 footer {
     margin-top: auto;
@@ -279,9 +269,7 @@ footer {
     background: rgba(2, 6, 23, 0.98);
 }
 
-/* --------------------
-   Sections À propos / Contact
--------------------- */
+/*  Sections À propos / Contact  */
 
 #about,
 #contact {
