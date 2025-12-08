@@ -1,0 +1,170 @@
+/* evenements.css - Styles pour la page événements */
+
+.events-upcoming {
+    margin: 40px 0 60px;
+}
+
+.event-card {
+    background: white;
+    border-radius: 12px;
+    padding: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 25px;
+    transition: transform 0.3s;
+}
+
+.event-card:hover {
+    transform: translateX(10px);
+}
+
+.event-date {
+    background: var(--fansite1-primary);
+    color: white;
+    border-radius: 8px;
+    text-align: center;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.event-date .day {
+    font-size: 2.5rem;
+    font-weight: 700;
+    display: block;
+}
+
+.event-date .month {
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.event-info h4 {
+    font-size: 1.5rem;
+    color: var(--dark);
+    margin-bottom: 10px;
+}
+
+.event-location {
+    color: var(--fansite1-primary);
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.event-desc {
+    color: #4a5568;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.event-link {
+    color: var(--fansite1-primary);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.event-link:hover {
+    text-decoration: underline;
+}
+
+.timeline {
+    position: relative;
+    padding-left: 50px;
+    border-left: 3px solid var(--fansite1-primary);
+    margin: 40px 0;
+}
+
+.timeline-item {
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.timeline-marker {
+    position: absolute;
+    left: -66px;
+    background: var(--fansite1-primary);
+    color: white;
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+.timeline-content {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.timeline-content h4 {
+    color: var(--dark);
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.timeline-date {
+    color: var(--fansite1-primary);
+    font-weight: 600;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.timeline-content p {
+    color: #4a5568;
+    line-height: 1.6;
+}
+
+.shows-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.show-card {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    border-top: 4px solid var(--fansite1-primary);
+}
+
+.show-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.show-header h4 {
+    color: var(--dark);
+    font-size: 1.3rem;
+}
+
+.show-year {
+    color: var(--fansite1-primary);
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.show-card p {
+    color: #718096;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .event-card {
+        grid-template-columns: 1fr;
+    }
+
+    .timeline {
+        padding-left: 30px;
+    }
+
+    .timeline-marker {
+        left: -50px;
+    }
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Josman FanSite</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="./src/styles/fansite2.css">
+    <link rel="stylesheet" href="./src/styles/contact.css">
+</head>
+<body>
+    <header class="fansite-header">
+        <nav class="breadcrumb">
+            <a href="../index.html">← Retour à l'accueil</a>
+        </nav>
+        <h1>🎤 Josman 🎤</h1>
+        <p>Contactez-nous</p>
+    </header>
+
+    <nav class="fansite-nav">
+        <a href="fansite2.html">Accueil</a>
+        <a href="actualite.html">Actualité</a>
+        <a href="realisations.html">Réalisations</a>
+        <a href="evenements.html">Événements</a>
+        <a href="galerie.html">Photos & Vidéos</a>
+        <a href="liens.html">Liens</a>
+        <a href="contact.html" class="active">Contact</a>
+    </nav>
+
+    <main class="container">
+        <section class="contact-section">
+            <div class="contact-intro">
+                <h2>📬 Contactez-nous</h2>
+                <p>Une question, une remarque ou une proposition ? Envoyez-nous un message.</p>
+            </div>
+
+            <div class="contact-container">
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" action="#" method="post">
+                        <div class="form-group">
+                            <label for="nom">Nom complet *</label>
+                            <input type="text" id="nom" name="nom" required placeholder="Votre nom">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required placeholder="votre.email@exemple.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="sujet">Sujet *</label>
+                            <select id="sujet" name="sujet" required>
+                                <option value="">Choisissez un sujet</option>
+                                <option value="question">Question générale</option>
+                                <option value="suggestion">Suggestion</option>
+                                <option value="contribution">Contribution au site</option>
+                                <option value="erreur">Signaler une erreur</option>
+                                <option value="autre">Autre</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="8" required placeholder="Écrivez votre message ici..."></textarea>
+                        </div>
+
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="newsletter" name="newsletter">
+                            <label for="newsletter">Je souhaite recevoir la newsletter mensuelle</label>
+                        </div>
+
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="rgpd" name="rgpd" required>
+                            <label for="rgpd">J'accepte que mes données soient utilisées pour répondre à ma demande *</label>
+                        </div>
+
+                        <button type="submit" class="btn submit-btn">Envoyer le message</button>
+                    </form>
+                </div>
+
+                <div class="contact-info">
+                    <div class="info-card">
+                        <h3>📧 Email (fan site)</h3>
+                        <p>contact@josmanfans.com</p>
+                    </div>
+
+                    <div class="info-card">
+                        <h3>🌐 Réseaux officiels</h3>
+                        <div class="social-links">
+                            <a href="https://www.instagram.com/josman_officiel/" class="social-link" target="_blank">Instagram</a>
+                            <a href="https://www.youtube.com/@josman_yt" class="social-link" target="_blank">YouTube</a>
+                            <a href="https://open.spotify.com/artist/6V5IVa7TQhLLnyLZa0Szdb" class="social-link" target="_blank">Spotify</a>
+                            <a href="https://www.deezer.com/fr/artist/7770370" class="social-link" target="_blank">Deezer</a>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <h3>⏰ Temps de réponse</h3>
+                        <p>Nous répondons généralement sous 48h ouvrées.</p>
+                    </div>   
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p><strong>Josman FanSite</strong> - Site non officiel créé par des fans</p>
+        </div>
+    </footer>
+
+</body>
+</html>

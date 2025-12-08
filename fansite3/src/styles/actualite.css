@@ -1,0 +1,92 @@
+/* actualite.css - Styles pour la page actualité */
+
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 30px;
+    margin: 40px 0;
+}
+
+.news-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.news-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(102, 126, 234, 0.2);
+}
+
+.news-image {
+    height: 200px;
+    border-radius: 8px 8px 0 0;
+}
+
+.news-content {
+    padding: 25px;
+}
+
+.news-date {
+    color: var(--fansite1-primary);
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.news-card h3 {
+    font-size: 1.4rem;
+    margin: 15px 0;
+    color: #1a202c;
+}
+
+.news-card p {
+    color: #718096;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.read-more {
+    color: var(--fansite1-primary);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.read-more:hover {
+    color: var(--fansite1-secondary);
+}
+
+.news-image {
+  height: 200px;
+  border-radius: 8px 8px 0 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.news-1 {
+  background-image: url("../img/pluiealbum.jpg");
+}
+
+.news-2  {
+  background-image: url("../img/jeudi.jpg");
+}
+
+.news-3  {
+  background-image: url("../img/zenith.jpg");
+}
+
+.news-4  {
+  background-image: url("../img/adidas.jpg");
+}
+
+.news-5  {
+  background-image: url("../img/festivals.jpeg");
+}
+
+.news-6 {
+  background-image: url("../img/indep.jpg");
+}

@@ -1,0 +1,173 @@
+.albums-section {
+    margin: 40px 0;
+}
+
+.album-card {
+    background: white;
+    border-radius: 12px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 30px;
+}
+
+.album-cover {
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 8px;
+}
+
+
+.album-info h4 {
+    font-size: 1.8rem;
+    color: var(--dark);
+    margin-bottom: 10px;
+}
+
+.album-year {
+    color: var(--fansite1-primary);
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.album-desc {
+    color: #4a5568;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.album-tracks {
+    background: var(--light);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.album-tracks strong {
+    color: var(--fansite1-primary);
+}
+
+.album-tracks ul {
+    list-style: none;
+    margin-top: 10px;
+}
+
+.album-tracks li {
+    padding: 5px 0;
+    color: #4a5568;
+}
+
+.album-tracks li:before {
+    content: "♪ ";
+    color: var(--fansite1-primary);
+    margin-right: 8px;
+}
+
+.collaborations-section {
+    margin: 60px 0;
+}
+
+.collab-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.collab-card {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    border-left: 4px solid var(--fansite1-primary);
+    transition: transform 0.3s;
+}
+
+.collab-card:hover {
+    transform: translateY(-5px);
+}
+
+.collab-card h4 {
+    color: var(--dark);
+    margin-bottom: 8px;
+}
+
+.collab-year {
+    color: var(--fansite1-primary);
+    font-weight: 600;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.collab-card p {
+    color: #718096;
+    line-height: 1.6;
+}
+
+.stats-section {
+    margin: 60px 0;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    text-align: center;
+}
+
+.stat-box {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.stat-number {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--fansite1-primary);
+    display: block;
+    margin-bottom: 10px;
+}
+
+.stat-label {
+    color: #718096;
+    font-size: 1.1rem;
+}
+
+.album-cover {
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 8px;
+}
+
+.album-1 {
+    background-image: url("../img/pluiealbum.jpg");
+}
+
+.album-2 {
+    background-image: url("../img/jeudi.jpg");
+}
+
+.album-3 {
+    background-image: url("../img/Une-vie-et-quelques.jpg");
+}
+
+.album-4 {
+    background-image: url("../img/Tant-qu-on-est-la.jpg");
+}
+
+
+@media (max-width: 768px) {
+    .album-card {
+        grid-template-columns: 1fr;
+    }
+}
